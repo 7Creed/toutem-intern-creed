@@ -60,7 +60,7 @@ export default function Hero() {
 
         <section>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-5 sm:px-10 md:px-20 mt-10">
-            {cardData.map((card, index) => (
+            {cardData.map((card) => (
               <div
                 key={card.id}
                 className="bg-white border shadow-md rounded-xl p-6 flex flex-col items-center text-center transition-all duration-300 hover:bg-green-100 active:bg-green-200 cursor-pointer"

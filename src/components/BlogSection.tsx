@@ -26,12 +26,6 @@ const cardData: CardItem[] = [
     title: "How to create your own essential oil diffuser blends",
     desc: "As you begin creating your own diffuser blends, it’s important to keep a few ...",
   },
-  //   {
-  //     id: 4,
-  //     image: "/blog.jpg",
-  //     title: "How to create your own essential oil diffuser blends",
-  //     desc: "As you begin creating your own diffuser blends, it’s important to keep a few ...",
-  //   },
 ];
 
 export default function BlogSection() {
@@ -41,7 +35,7 @@ export default function BlogSection() {
         BLOG
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {cardData.map((card, index) => (
+        {cardData.map((card) => (
           <div key={card.id} className="bg-white rounded-lg shadow p-4">
             <Image
               src={card.image}
