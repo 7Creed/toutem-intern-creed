@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
+import HomePage from "./HomePage";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -120,9 +121,10 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
-      <Footer />
+      <Footer /> */}
+      <HomePage />
     </>
   );
 }
