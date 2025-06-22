@@ -13,7 +13,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-white text-center text-sm px-5 md:px-15 lg:px-20 py-10 text-gray-600">
-      <div className="flex items-start justify-between">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
         <div className="flex items-center">
           <Image
             src="/logo.png"

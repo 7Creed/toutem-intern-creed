@@ -1,24 +1,3 @@
-// const Hero = () => {
-//   return (
-//     <section className="text-center py-20 bg-gray-50">
-//       <h1 className="text-4xl font-bold text-gray-800 mb-4">
-//         Welcome to My App
-//       </h1>
-//       <p className="text-lg text-gray-600 mb-8">
-//         Build fast, modern websites with Next.js and Tailwind CSS.
-//       </p>
-//       <a
-//         href="#"
-//         className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition"
-//       >
-//         Get Started
-//       </a>
-//     </section>
-//   );
-// };
-
-// export default Hero;
-
 import Image from "next/image";
 
 interface CardItem {
@@ -54,9 +33,9 @@ export default function Hero() {
   return (
     <>
       <div className="bg-white">
-        <section className="relative bg-[#fefefe] h-screen flex items-center justify-between px-5 md:px-20 lg:px-25 py-60">
+        <section className="relative bg-[#fefefe] min-h-screen flex flex-col md:flex-row items-center justify-between px-5 md:px-20 lg:px-25 py-20 md:py-60">
           <div className="w-full md:w-1/3 z-10 mb-10 md:mb-0">
-            <h1 className="text-5xl font-semibold text-green-400">
+            <h1 className="text-4xl md:text-5xl font-semibold text-green-400">
               Pear kiwi
               <br />& Mint
             </h1>
@@ -73,10 +52,10 @@ export default function Hero() {
               alt="Product"
               width={600}
               height={600}
-              className="object-contain"
+              className="object-contain max-w-full h-auto"
             />
           </div>
-          <div className="absolute top-0 bottom-0 right-0 w-[60%] h-[100%] bg-green-300 rounded-bl-full rounded-tl-full z-0"></div>
+          <div className="absolute top-0 bottom-0 right-0 w-[55%] h-[80%] bg-green-300 rounded-bl-full rounded-tl-full rounded-br-full z-0"></div>
         </section>
 
         <section>

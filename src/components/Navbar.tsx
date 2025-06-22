@@ -1,30 +1,3 @@
-// const Navbar = () => {
-//   return (
-//     <nav className="bg-white shadow-md px-8 py-4 flex justify-between items-center">
-//       <div className="text-xl font-bold text-blue-600">MyBrand</div>
-//       <ul className="flex gap-6 text-gray-700">
-//         <li>
-//           <a href="#" className="hover:text-blue-500">
-//             Home
-//           </a>
-//         </li>
-//         <li>
-//           <a href="#" className="hover:text-blue-500">
-//             About
-//           </a>
-//         </li>
-//         <li>
-//           <a href="#" className="hover:text-blue-500">
-//             Contact
-//           </a>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
 // use client';
 import { useState } from "react";
 import Image from "next/image";
@@ -61,21 +34,6 @@ export default function Navbar() {
       >
         <FontAwesomeIcon icon={isOpen ? faXmark : faBars} />
       </button>
-
-      {/* <ul className="flex gap-6 text-sm font-medium uppercase">
-        <li>
-          <Link href="#">Home</Link>
-        </li>
-        <li>
-          <Link href="#">About Us</Link>
-        </li>
-        <li>
-          <Link href="#">Shop</Link>
-        </li>
-        <li>
-          <Link href="#">Contact</Link>
-        </li>
-      </ul> */}
 
       <ul
         className={`
@@ -132,7 +90,6 @@ export default function Navbar() {
         </li>
       </ul>
 
-      {/* <Image src="/cart-icon.svg" alt="Cart" width={24} height={24} /> */}
       <div className="hidden md:flex gap-3">
         <FontAwesomeIcon
           icon={faShoppingCart}
